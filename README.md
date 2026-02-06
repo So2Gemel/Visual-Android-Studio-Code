@@ -1,281 +1,342 @@
 🚀 Visual Android Studio Code (VASC)
 
-> Mobile‑first. Native‑powered. AI‑driven.
-A next‑generation Android IDE designed to outperform existing mobile IDEs and challenge desktop workflows.
-
-
-
----
-
-📌 Overview
-
-Visual Android Studio Code (VASC) is a professional‑grade Android IDE that runs entirely on phones and tablets. It combines a high‑performance native core (NDK), an extensible plugin system, and an AI engine to deliver a serious development environment for Android, NDK, and advanced workflows such as reverse engineering.
-
-VASC is not a lightweight editor — it is a complete development system.
-
-
----
-
-🎯 Vision
-
-Build an Android IDE that:
-
-Works fully on mobile devices — no PC required
-
-Feels fast, stable, and professional
-
-Treats AI and NDK as core infrastructure, not add‑ons
-
-Dominates mobile‑first development niches before expanding further
-
-
-> Goal: Create a product that forces competitors to rethink their direction.
+> Mobile‑first • Native‑powered • AI‑driven
+A next‑generation Android IDE engineered to dominate mobile development and challenge desktop workflows.
 
 
 
 
 ---
 
-🧠 Design Philosophy
+1️⃣ Overview
+
+Visual Android Studio Code (VASC) is a professional‑grade Android IDE that runs entirely on phones and tablets. It combines a high‑performance native core (NDK), a modular plugin system, and a service‑based AI engine to deliver a full development environment for Android, NDK, and advanced workflows including reverse engineering.
+
+VASC is not a code editor. It is a development platform.
+
+
+---
+
+2️⃣ Vision & Goals
+
+Vision
+
+Build an IDE that:
+
+Eliminates the need for a PC
+
+Feels fast, stable, and elite‑grade
+
+Treats AI and NDK as core infrastructure
+
+Owns mobile‑first development niches before expanding further
+
+
+Ultimate goal:
+Create a product that forces competitors to reconsider entering the market.
+
+
+---
+
+3️⃣ Design Philosophy
 
 IDE as a System
 
-VASC is engineered as a modular system rather than a monolithic app:
+VASC is engineered as a modular system, not a monolithic app:
 
-Core Engine — Java/Kotlin + C++ (NDK)
+Core Engine (Java/Kotlin + C++ NDK)
 
-Editor Engine — native‑accelerated text, parsing, rendering
+Editor Engine (native‑accelerated)
 
-AI Engine — service‑based (local / remote / hybrid)
+AI Engine (local / remote / hybrid)
 
-Build System — fast, predictable, incremental
+Build System (fast & predictable)
 
-Plugin Engine — sandboxed and permission‑based
+Plugin Engine (sandboxed)
 
-UI Engine — dockable, desktop‑style layout
-
-
-Every module is replaceable and extensible without breaking the system.
+UI Engine (desktop‑style layout)
 
 
----
-
-🏗 High‑Level Architecture
-
-IDE-Core
-├── core-java        # App lifecycle, UI bridge
-├── core-ndk         # Parsing, indexing, rendering
-├── editor-engine    # Rope buffer, undo/redo, selections
-├── build-system     # Mini build engine, CMake wrapper
-├── ai-engine        # Local / remote AI services
-├── plugin-engine    # Plugin host & sandbox
-├── sdk-manager      # SDK / NDK / toolchain management
-├── ui-engine        # Dockable panels, rendering
-└── security-layer   # Licensing, integrity, anti-tamper
+Every module is replaceable without breaking the system.
 
 
 ---
 
-⚡ Key Pillars
+4️⃣ High‑Level Architecture
 
-1️⃣ Performance First
+VASC
+├── app-layer          # Android lifecycle & UI bridge
+├── core-engine        # Project model & state
+├── native-engine      # Parsing, indexing, rendering (NDK)
+├── editor-engine      # Text model, undo/redo, selections
+├── build-system       # Incremental builds & CMake wrapper
+├── ai-engine          # AI services & context engine
+├── plugin-engine      # Sandboxed extensions
+├── sdk-manager        # SDK/NDK/toolchains
+└── security-layer     # Integrity, licensing, anti‑tamper
 
-Heavy operations moved to C++ via NDK
 
-Custom memory pools and thread pools
+---
 
-Efficient editor buffer (rope‑based)
+5️⃣ Core Pillars
 
-Designed to handle large projects and files without lag
+Performance First
+
+Heavy logic moved to C++ (NDK)
+
+Custom memory & thread pools
+
+Rope‑based text buffers
+
+Designed for large projects and files
 
 
-2️⃣ AI as Core Infrastructure
+AI as Infrastructure
 
-Code explanation, error fixing, generation, refactoring
+Code explanation, fixes, generation, refactoring
 
 JNI / C++ / Smali understanding
 
 Crash‑log analysis
 
-Context‑aware (open files, errors, project state)
+Context‑aware project understanding
 
 
-3️⃣ Full NDK & SDK Support
+Full NDK & SDK Support
 
-Multi‑ABI: armeabi‑v7a, arm64‑v8a, x86, x86_64
+ABIs: armeabi‑v7a, arm64‑v8a, x86, x86_64
 
-Built‑in SDK Manager
+Integrated SDK/NDK Manager
 
-Integrated CMake and toolchain handling
+Built‑in CMake and toolchains
 
 
-4️⃣ Advanced Tooling
+Advanced Tooling
 
 Integrated terminal (local + SSH)
 
 Git & GitHub workflows
 
-Reverse‑engineering tools (Smali, ELF, Hex, JADX)
+Reverse‑engineering toolchain
 
 
 
 ---
 
-🧩 Core Features
+6️⃣ Feature Set
 
-Editor
+Editor Engine
 
-High‑performance native editor core
+Native high‑performance editor core
 
-Syntax highlighting (tree‑sitter)
+Tree‑sitter syntax highlighting
 
 Multi‑cursor, code folding, semantic highlighting
 
-Large‑file and crash‑safe editing
+Crash‑safe state recovery
 
 
 Terminal
 
-Multiple terminal sessions per project
+Multiple sessions per project
 
-ANSI colors, hyperlinks, copy/paste
+ANSI colors, SSH support
 
-SSH remote sessions
-
-Plugin API for custom terminals
+Plugin‑accessible terminal API
 
 
 Version Control
 
 Native Git integration (libgit2)
 
-Clone, commit, push, branches, history
+Full Git workflows
 
-GitHub OAuth and PR/issue management
+GitHub OAuth and PR/Issue support
 
 
 AI Engine
 
-Local (on‑device) / Remote / Hybrid modes
+Local / Remote / Hybrid execution
 
 Privacy‑first configuration
 
-Modular provider support
+Modular provider system
 
 
 
 ---
 
-🔬 Reverse Engineering (Pro)
+7️⃣ Reverse Engineering (Pro)
 
-Smali editor with references
+Smali editor
 
-ELF and binary viewers
+ELF & binary viewers
 
-Hex editor and binary diff
+Hex editor & diff
 
-Integration hooks for advanced analysis tools
+Dynamic instrumentation hooks (e.g. Frida)
 
 
-> These features are designed for legal and ethical use only.
+> All RE features are intended for legal and ethical use only.
 
 
 
 
 ---
 
-🌍 Internationalization
+8️⃣ Internationalization (I18n)
 
 Base language: English
 
-Full i18n system with RTL support
+Full RTL support
 
-Planned support for 15+ languages (Arabic, Chinese, Spanish, French, etc.)
+Target languages (15+): Arabic, Chinese, Spanish, French, German, Russian, Hindi, Japanese, Portuguese, Turkish, Urdu, Bengali, Indonesian, Persian (optional)
 
 
 
 ---
 
-🔐 Security & Licensing
+9️⃣ Security Model
 
-Native‑level integrity checks
+Native integrity checks
 
-Signed plugins and updates
+Plugin signing & permissions
 
 Secure key storage (Android Keystore)
 
 Optional offline licensing
 
 
-
----
-
-🧩 Plugin System
-
-Sandboxed plugin runtime
-
-Permission‑based access
-
-Support for UI, language, AI, and tooling plugins
-
-Planned marketplace
-
+Security‑critical logic is always implemented in NDK first.
 
 
 ---
 
-🗺 Roadmap (High‑Level)
+🔟 Plugin System
 
-Phase 1: Core editor + file system
+Sandboxed execution environment
+
+Permission‑based APIs
+
+UI, language, AI, and tooling plugins
+
+Planned plugin marketplace
+
+
+
+---
+
+1️⃣1️⃣ Contributor Guidelines
+
+Principles
+
+Performance over shortcuts
+
+Modularity over coupling
+
+Security by default
+
+Mobile‑first decisions
+
+
+Contribution Process
+
+1. Fork repository
+
+
+2. Create feature branch
+
+
+3. Follow architecture rules
+
+
+4. Submit PR with clear explanation
+
+
+
+Security issues must be disclosed privately.
+
+
+---
+
+1️⃣2️⃣ Architecture Rules (Non‑Negotiable)
+
+Native engine has no Android UI dependencies
+
+AI engine never mutates files directly
+
+All edits go through editor transactions
+
+Plugins cannot access core memory
+
+
+
+---
+
+1️⃣3️⃣ Roadmap (Condensed)
+
+Phase 1: Core editor & file system
 
 Phase 2: Terminal, Git, UI layout
 
 Phase 3: NDK + Build system
 
-Phase 4: AI Engine (v1)
+Phase 4: AI Engine v1
 
-Phase 5: Plugins & marketplace
-
-
-Detailed roadmap is maintained in a separate document.
-
-
----
-
-💰 Monetization
-
-Free tier: Core editor, terminal, basic Git
-
-Pro tier: AI features, NDK tools, reverse‑engineering modules
-
-Enterprise: Custom builds, on‑prem licensing
+Phase 5: Plugin system & marketplace
 
 
 
 ---
 
-⚠ Legal Notice
+1️⃣4️⃣ MVP Checklist
 
-Reverse‑engineering and security‑related features are intended for education, research, and lawful purposes only. Users are responsible for complying with local laws and platform terms.
+Open/edit large files smoothly
 
+Async project tree
 
----
+Android build & run via ADB
 
-🤝 Contributing
+Integrated terminal
 
-This project is under active development. Contributions, feedback, and design discussions are welcome.
+Git clone & commit
 
-Please see CONTRIBUTING.md and ARCHITECTURE.md for technical details.
+Basic AI code explanation
 
-
----
-
-📄 License
-
-License details will be provided before the first public release.
 
 
 ---
 
-Visual Android Studio Code
-Mobile development without compromise.
+1️⃣5️⃣ Monetization
+
+Free: Core editor, terminal, basic Git
+
+Pro: AI, NDK tools, RE features
+
+Enterprise: Custom builds & licensing
+
+
+
+---
+
+1️⃣6️⃣ Legal & Compliance
+
+Reverse‑engineering features are provided for education and lawful research only. Users are responsible for complying with applicable laws.
+
+
+---
+
+1️⃣7️⃣ Final Statement
+
+VASC is designed as a long‑term platform, not a short‑term app.
+
+If built according to this document:
+
+> It becomes the most advanced mobile IDE in its class.
+
+
+
+
+---
+
+Visual Android Studio Code — Mobile development without compromise.
